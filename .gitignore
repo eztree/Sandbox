@@ -36,3 +36,7 @@
 yarn-debug.log*
 .yarn-integrity
 .env*
+public/assets
+.env*
+send_sms.rb
+config/credentials.yml.enc

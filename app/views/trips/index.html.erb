@@ -1,0 +1,10 @@
+Ok it works
+
+<% @trips.each do |trip| %>
+  <p><%= link_to "#{trip.name}, #{trip.start} to #{trip.end} | #{trip.address}", trip_path(trip) %></p>
+<% end %>
+
+<div class="container">
+
+
+</div>

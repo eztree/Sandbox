@@ -7,6 +7,13 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import "channels"
 import "stylesheets/application";
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 Rails.start()
 Turbolinks.start()
+
+import { initMapbox } from '../plugins/init_mapbox';
+
+document.addEventListener('turbolinks:load', () => {
+  initMapbox();
+})
